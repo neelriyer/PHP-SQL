@@ -1,0 +1,92 @@
+#!/usr/bin/php
+<?php
+
+//
+// acting - The list of movies acted by a given actor
+
+//The acting script lists the movie title, its director, its year, its content rating and IMDB score, one per line, of all the movies acted by the given actor.
+ 
+//The output is sorted by year and then by movie title, both in ascending order. 
+
+//If any movies have empty year, output them at the end and sort them by movie title in ascending order. 
+
+//It accepts one command-line argument: an actor name (has to exactly match a name stored in the database and the matching is case insensitive). It has the following output format:
+
+// include the common PHP code file
+require("a2.php");
+
+
+
+$usage = "Usage: $argv[0] Name";
+$db = dbConnect(DB_CONNECTION);
+
+// Check arguments
+if (count($argv) < 2) exit("$usage\n");
+
+//BEGIN
+// search term
+$val = $argv[1];
+
+//full query
+$full = "
+	select movie.title, director.name, movie.year, movie.content_rating, rating.imdb_score, movie.id  
+
+	from movie
+
+	join acting on movie.id = acting.movie_id
+	
+	join actor on actor.id = acting.actor_id
+
+	left join director on movie.director_id = director.id
+
+	left join rating on movie.id = rating.movie_id 
+
+	where upper(actor.name) = upper(%s)
+
+	order by (case
+            	when movie.year is null then 1 
+            	else 0 
+			 end), movie.year, movie.title;";
+
+//testing TODO get rid of this
+//echo "$val\n";
+
+//execute
+$full_result = dbQuery($db, mkSQL($full, $val));
+
+// Iterate through the results and print
+$i = 1;
+while ($t = dbNext($full_result)) {
+
+	//film name and director name
+	$film_name = $t[0];
+	$director_name = $t[1];
+
+	echo "$i. $film_name -- $director_name";
+
+	//print year
+	if (!empty($t[2])) 
+		echo " ($t[2], ";
+	if (empty($t[2])) 
+		echo "(., ";
+
+	//print content rating
+	if (!empty($t[3])) 
+		echo "$t[3], ";
+	if (empty($t[3])) 
+		echo "., ";
+
+	//print imdb rating
+	if (!empty($t[4])) 
+		echo "$t[4]";
+	if (empty($t[4])) 
+		echo ".";
+
+	//print end
+	echo ")\n";
+
+	$i++;
+}
+
+
+?>

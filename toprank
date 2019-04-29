@@ -1,0 +1,164 @@
+#!/usr/bin/php
+<?php
+
+//
+// toprank - The toprank script takes in 3 or 4 commandline arguments:
+
+//./toprank K StartYear EndYear
+//or:
+//./toprank Genres K StartYear EndYear
+
+//where Genres is a list of genres separated by '&', K is the top K movies ranked by IMDB score and then by the number of votes (both in descending order) between (and including) StartYear and EndYear, with 1 <= K <= 1000, 1900 < StartYear <= EndYear < 2020 and your program will not be tested with a list of more than 8 genres. 
+
+//We interpret '&' as conjunction, i.e., the selected movies shall contain all the specified genres. 
+
+//When Genres is not provided (when your program takes in 3 arguments), perform the same ranking but on movies with any genres. 
+
+//Do not include any movie titles with empty year. For example:
+
+// include the common PHP code file
+require("a2.php");
+
+
+//BEGIN
+
+$usage = "Usage: $argv[0] Genre limit start finish";
+$db = dbConnect(DB_CONNECTION);
+
+// Check arguments
+if (count($argv) < 3 or count($argv)>5) exit("$usage\n");
+
+//testing
+//echo "arg count = ".count($argv)."\n";
+
+//if genre included 
+if(count($argv) == 5) {
+	$genre_count = substr_count($argv[1], "&")+1;
+	$genres = explode("&",$argv[1]);
+	$K = $argv[2];
+	$start = $argv[3];
+	$end = $argv[4];
+
+	//testing
+	//for ($i = 0;$i<$genre_count;$i++) echo "genres = $genres[$i]\n";
+	//echo "genre_count = $genre_count\n\n";
+}
+
+//if genre not included
+if(count($argv) == 4) {
+	$K = $argv[1];
+	$start = $argv[2];
+	$end = $argv[3];
+}
+
+//testing 
+//echo "k = $K\n";
+//echo "start = $start\n";
+//echo "end = $end\n";
+
+$q = "select movie.title, movie.year, movie.content_rating, movie.lang, rating.imdb_score, rating.num_voted_users, genre_agg.genre
+
+	from movie
+
+	join rating on movie.id = rating.movie_id
+
+	join 
+
+		(select movie_id, string_agg(genre,  ', ') as genre
+		from genre
+		group by movie_id
+		order by movie_id) as genre_agg
+
+		on genre_agg.movie_id = movie.id
+
+	where (year between %d and %d) and (year is not null)
+
+	order by rating.imdb_score desc, rating.num_voted_users desc";
+
+
+$r = dbQuery($db, mkSQL($q, $start, $end));
+
+//echo "\n\n";
+
+// Iterate through the results and print
+$i = 1;
+while ($t = dbNext($r) and $i<=$K) {
+
+	//genre returned by sql query
+	$genre_sql = $t[6];
+
+	//flag
+	$genres_correct = 1;
+	
+
+	if(count($argv) == 5) {
+		//check that every genre required is part of genre returned by sql query
+		for ($j = 0;$j<$genre_count;$j++) {
+
+			//genre sql
+			//echo "\nBEGIN SEARCH\n";
+			//echo "$t[0]\n";
+			//echo "genre_sql = $genre_sql\n";
+			//echo "genres required = $genres[$j]\n";
+			//echo "genres_correct = $genres_correct\n";
+
+			//if genre not found
+			if (stristr("$genre_sql", "$genres[$j]") == FALSE) {
+			
+				//echo "\nWRONG GENRE\n";
+				//echo "$t[0]\n"; 
+				//echo "genre_sql = $genre_sql\n";
+				//echo "genres[$j] = $genres[$j]\n";
+
+				//raise flag
+				$genres_correct = 0;
+
+				//exit
+				break;
+
+			}
+
+		}
+	}
+
+	if($genres_correct == 1) {
+		//print title
+		if (!empty($t[0])) 
+			echo "$i. $t[0]";
+		if (empty($t[0])) 
+			continue;
+
+		//open bracket
+		echo " (";
+
+		//print year
+		if (!empty($t[1])) 
+			echo "$t[1], ";
+
+		//print content rating
+		if (!empty($t[2])) 
+			echo "$t[2], ";
+
+		//print language
+		if (!empty($t[3])) 
+			echo "$t[3]";
+
+		//close bracket
+		echo ") ";
+
+		//print imdb rating
+		if (!empty($t[4]))
+			echo "[$t[4],";
+
+		//print imdb votes
+		if (!empty($t[5]))
+			echo " $t[5]]";
+
+		//newline
+		echo "\n";
+
+	  	$i++;
+	}
+}
+
+?>

@@ -1,0 +1,90 @@
+#!/usr/bin/php
+<?php
+
+//
+// title - The title script lists the movie title, year, content rating, IMDB score and genres of those movies with the title matching the given substring (case insensitive), one per line. 
+
+//The output of multiple genres of a movie should be concatenated in one line delimited by a comma and sorted alphabetically in ascending order, as shown by an example below. 
+
+//The rows are ordered by year (ascending), then by IMDB rating (descending) and finally by title (ascending). It has the following output format:
+
+// include the common PHP code file
+require("a2.php");
+
+
+//BEGIN
+
+$usage = "Usage: $argv[0] Name";
+$db = dbConnect(DB_CONNECTION);
+
+// Check arguments
+if (count($argv) < 2) exit("$usage\n");
+
+// Get the return results
+// Get upper case
+$val = $argv[1];
+
+//testing TODO get rid of this
+//echo "$val\n";
+
+$q = "select movie.title, movie.year, movie.content_rating, rating.imdb_score, genre_agg.genre
+
+	from movie
+
+	join rating on movie.id = rating.movie_id
+
+	join 
+
+		(select movie_id, string_agg(genre,  ',') as genre
+		from genre
+		group by movie_id
+		order by movie_id) as genre_agg
+
+		on genre_agg.movie_id = movie.id
+
+	where title ~* %s
+
+	order by movie.year, rating.imdb_score desc, movie.title";
+
+
+$r = dbQuery($db, mkSQL($q, $val));
+
+// Iterate through the results and print
+$i = 1;
+while ($t = dbNext($r)) {
+
+	//print title
+	if (!empty($t[0])) 
+		echo "$i. $t[0]";
+	if (empty($t[0])) 
+		continue;
+
+	//open bracket
+	echo " (";
+
+	//print year
+	if (!empty($t[1])) 
+		echo "$t[1], ";
+
+	//print content rating
+	if (!empty($t[2])) 
+		echo "$t[2], ";
+
+	//print imdb rating
+	if (!empty($t[3])) 
+		echo "$t[3]";
+
+	//close bracket
+	echo ") ";
+
+	//print genres
+	if (!empty($t[4]))
+		echo "[$t[4]]";
+
+	//newline
+	echo "\n";
+
+  $i++;
+}
+
+?>

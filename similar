@@ -1,0 +1,134 @@
+#!/usr/bin/php
+<?php
+
+//
+// similar 
+
+//Suppose you are asked to implement a movie recommendation feature for IMDB. 
+
+//Based on the movie that a user is currently browsing, a list of similar movies will be presented. 
+
+//In Task D, the similar script takes in 2 arguments: a case-insensitive movie full title (this shall produce a single match. If not, just use the one with the most recent year as if it is the only match); and a number N (1 <= N <= 1000). 
+
+//It will then find its similar N movies (excluding itself) that share the maximum number of common genres (output nothing if no other movies have any common genres with the given movie). 
+
+//For those with the same number of common genres, they will then be ranked by the maximum number (including zero number) of common plot keywords. If both are the same, then they will be ranked by their IMDB scores and then by the number of votes (the higher the better).
+
+// include the common PHP code file
+require("a2.php");
+
+
+//BEGIN
+
+$usage = "Usage: $argv[0] N";
+$db = dbConnect(DB_CONNECTION);
+
+// Check arguments
+if (count($argv) < 2) exit("$usage\n");
+
+//testing
+//echo "arg count = ".count($argv)."\n";
+
+$K = $argv[2];
+$title = $argv[1];
+
+$q = "
+	--hairspray (source), happy feet (target) find keywords
+	create or replace view keyword_agg as
+	select movie.id, movie.year, movie.title, count(source.keyword) as keyword_count
+	from movie
+	join keyword as source on source.movie_id = movie.id
+	join
+
+		(select movie.id, movie.title, keyword.keyword
+		from movie
+		join keyword on keyword.movie_id = movie.id
+		where upper(movie.title) = upper(%s)) as target
+
+		on target.keyword = source.keyword
+
+	where upper(movie.title) != upper(%s)
+	group by movie.id, movie.title
+	order by count(source.keyword) desc;
+
+
+	--hairspray (source), happy feet (target) find genre
+	create or replace view genre_agg as
+	select movie.id, movie.year, movie.title, count(source.genre) as genre_count
+	from movie
+	join genre as source on source.movie_id = movie.id
+
+	join
+
+		(select movie.id, movie.title, source.genre
+		from movie
+		join genre as source on source.movie_id = movie.id
+		where upper(movie.title) = upper(%s)) as target
+
+		on target.genre = source.genre
+
+	where upper(movie.title) != upper(%s)
+	group by movie.id, movie.title
+	order by count(source.genre) desc;
+
+
+	--final query
+	select genre_agg.title, genre_agg.year, coalesce(genre_agg.genre_count, 0) as genre_count, coalesce(keyword_agg.keyword_count, 0) as keyword_count, rating.imdb_score as imdb_score, rating.num_voted_users as num_voted_users
+
+	from genre_agg
+
+	left join keyword_agg on keyword_agg.id = genre_agg.id
+
+	join rating on rating.movie_id = genre_agg.id
+
+	order by genre_count desc, keyword_count desc, imdb_score desc, num_voted_users desc";
+
+
+$r = dbQuery($db, mkSQL($q, $title, $title, $title, $title));
+
+// Iterate through the results and print
+$i = 1;
+while ($t = dbNext($r) and $i<=$K) {
+
+	//print title
+	if (!empty($t[0])) {
+
+		//append year if it exists
+		if($t[1]) $t[0] = $t[0]." "."(".$t[1].")";
+
+		//print 
+		echo "$i. $t[0]";
+	}
+	if (empty($t[0])) 
+		continue;
+
+	//open bracket
+	echo " [";
+
+	//print genre count
+	if (!empty($t[2])) 
+		echo "$t[2], ";
+	if (empty($t[2]))
+		continue;
+
+	//print keyword count
+	if (!empty($t[3])) 
+		echo "$t[3], ";
+	if(empty($t[3]))
+		echo "0, ";
+
+	//print imdb rating
+	if (!empty($t[4])) 
+		echo "$t[4], ";
+
+	//print imdb votes
+	if (!empty($t[5]))
+		echo "$t[5]]";
+
+	//newline
+	echo "\n";
+
+  	$i++;
+}
+
+?>

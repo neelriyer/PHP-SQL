@@ -1,0 +1,48 @@
+#!/usr/bin/php
+<?php
+
+//
+//degrees 
+
+//The degrees takes in an actor name (case insensitive) and M & N degrees of separation (where 1 <= M <= N <= 6). It outputs all actors (no directors) that are exactly M to N degrees of separation (which represents the shortest path) from the given actor. Output the list of actors with the degree of separation indicated in brackets, sorted by the degree of separation and then by name, both in ascending order. For example:
+
+// include the common PHP code file
+require("a2.php");
+
+
+//BEGIN
+
+$usage = "Usage: $argv[0] N";
+$db = dbConnect(DB_CONNECTION);
+
+// Check arguments
+if (count($argv) < 2) exit("$usage\n");
+
+//create graph
+$graph = create_graph();
+//print_r($graph);
+
+//read in from cmd line. (Convert to proper case)
+//TODO: convert to upper case
+//convert sql query to upper case too
+$actor1 = ucwords(strtolower($argv[1]));
+$start_limit = $argv[2];
+$finish_limit = $argv[3];
+
+//get index of graph array for actor 1
+$key1 = array_search($actor1, $graph);
+
+//echo "index 1 = $key1\n";
+
+//$arr = adjacent_actors($actor1);
+//print_r($arr);
+
+//dfs search
+//print_all_paths($key1, $start_limit, $finish_limit, $graph);
+
+//bfs search
+bfs_search($key1, $start_limit, $finish_limit, $graph);
+
+
+
+?>

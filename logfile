@@ -1,0 +1,540 @@
+2019-04-17 19:43:25.163 AEST [21955] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 19:43:25.163 AEST [21955] HINT:  Is another postmaster (PID 21660) running in data directory "/usr/local/var/postgres"?
+2019-04-17 19:45:37.932 AEST [22062] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-17 19:45:37.933 AEST [22062] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-17 19:45:37.936 AEST [22062] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-17 19:45:37.956 AEST [22063] LOG:  database system was shut down at 2019-04-17 19:45:33 AEST
+2019-04-17 19:45:37.969 AEST [22062] LOG:  database system is ready to accept connections
+2019-04-17 19:57:30.508 AEST [22604] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 19:57:30.508 AEST [22604] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 19:57:30.508 AEST [22604] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 19:57:30.508 AEST [22604] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 19:57:30.508 AEST [22604] WARNING:  could not create listen socket for "localhost"
+2019-04-17 19:57:30.508 AEST [22604] FATAL:  could not create any TCP/IP sockets
+2019-04-17 19:57:30.508 AEST [22604] LOG:  database system is shut down
+2019-04-17 19:57:38.397 AEST [22068] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 19:57:38.875 AEST [22062] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-17 19:57:38.875 AEST [22062] LOG:  performing immediate shutdown because data directory lock file is invalid
+2019-04-17 19:57:38.875 AEST [22062] LOG:  received immediate shutdown request
+2019-04-17 19:57:38.875 AEST [22062] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-17 19:57:38.876 AEST [22068] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2019-04-17 19:57:38.876 AEST [22067] WARNING:  terminating connection because of crash of another server process
+2019-04-17 19:57:38.876 AEST [22067] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2019-04-17 19:57:38.876 AEST [22067] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2019-04-17 19:57:38.879 AEST [22610] FATAL:  the database system is shutting down
+2019-04-17 19:57:38.884 AEST [22062] LOG:  database system is shut down
+2019-04-17 19:58:04.047 AEST [22638] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-17 19:58:04.047 AEST [22638] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-17 19:58:04.051 AEST [22638] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-17 19:58:04.069 AEST [22640] LOG:  database system was shut down at 2019-04-17 19:57:58 AEST
+2019-04-17 19:58:04.078 AEST [22638] LOG:  database system is ready to accept connections
+2019-04-17 20:07:34.893 AEST [23125] LOG:  incomplete startup packet
+2019-04-17 20:23:59.218 AEST [23917] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 20:23:59.218 AEST [23917] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:23:59.218 AEST [23917] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 20:23:59.218 AEST [23917] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:23:59.218 AEST [23917] WARNING:  could not create listen socket for "localhost"
+2019-04-17 20:23:59.218 AEST [23917] FATAL:  could not create any TCP/IP sockets
+2019-04-17 20:23:59.219 AEST [23917] LOG:  database system is shut down
+2019-04-17 20:24:04.307 AEST [22638] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-17 20:24:04.307 AEST [22638] LOG:  performing immediate shutdown because data directory lock file is invalid
+2019-04-17 20:24:04.308 AEST [22638] LOG:  received immediate shutdown request
+2019-04-17 20:24:04.308 AEST [22638] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-17 20:24:04.309 AEST [22644] WARNING:  terminating connection because of crash of another server process
+2019-04-17 20:24:04.309 AEST [22644] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2019-04-17 20:24:04.309 AEST [22644] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2019-04-17 20:24:04.309 AEST [22645] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2019-04-17 20:24:04.312 AEST [22638] LOG:  database system is shut down
+2019-04-17 20:24:12.088 AEST [23950] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-17 20:24:12.088 AEST [23950] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-17 20:24:12.092 AEST [23950] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-17 20:24:12.110 AEST [23951] LOG:  database system was shut down at 2019-04-17 20:23:55 AEST
+2019-04-17 20:24:12.143 AEST [23950] LOG:  database system is ready to accept connections
+2019-04-17 20:28:12.176 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:12.858 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:12.859 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:13.542 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:13.542 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:14.224 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:14.224 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:14.916 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:14.916 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:15.608 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:15.608 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:16.287 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:16.287 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:16.974 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:16.975 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:17.659 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:17.660 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:18.337 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:18.337 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:19.012 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:19.012 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:19.694 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:19.694 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:20.376 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:20.376 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:21.059 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:21.059 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:21.746 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:21.746 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:22.430 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:22.430 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:22.867 AEST [23955] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-04-17 20:28:22.868 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:22.868 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:23.565 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:23.565 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:24.236 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:24.236 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:24.880 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:24.880 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:25.564 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:25.564 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:26.238 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:26.238 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:26.921 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:26.921 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:27.613 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:27.613 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:28.310 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:28.310 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:29.007 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:29.007 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:29.703 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:29.703 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:30.392 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:30.392 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:31.098 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:31.098 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:31.802 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:31.802 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:32.502 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:32.503 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:33.193 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:33.193 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:33.618 AEST [23955] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-04-17 20:28:33.619 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:33.619 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:34.282 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:34.282 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:34.960 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:34.960 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:35.632 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:35.632 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:36.327 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:36.328 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:37.026 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:37.026 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:37.728 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:37.729 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:38.431 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:38.431 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:39.113 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:39.113 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:39.805 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:39.805 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:40.509 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:40.509 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:41.204 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:41.205 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:41.912 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:41.926 AEST [23956] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-17 20:28:42.487 AEST [23950] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-17 20:28:42.487 AEST [23950] LOG:  performing immediate shutdown because data directory lock file is invalid
+2019-04-17 20:28:42.487 AEST [23950] LOG:  received immediate shutdown request
+2019-04-17 20:28:42.487 AEST [23950] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-17 20:28:42.488 AEST [23955] WARNING:  terminating connection because of crash of another server process
+2019-04-17 20:28:42.488 AEST [23955] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2019-04-17 20:28:42.488 AEST [23955] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2019-04-17 20:28:42.489 AEST [23956] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2019-04-17 20:28:42.494 AEST [23950] LOG:  database system is shut down
+2019-04-17 20:31:23.156 AEST [26250] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 20:31:23.156 AEST [26250] HINT:  Is another postmaster (PID 26240) running in data directory "/usr/local/var/postgres"?
+2019-04-17 20:31:27.679 AEST [26253] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 20:31:27.679 AEST [26253] HINT:  Is another postmaster (PID 26240) running in data directory "/usr/local/var/postgres"?
+2019-04-17 20:31:29.076 AEST [26256] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 20:31:29.076 AEST [26256] HINT:  Is another postmaster (PID 26240) running in data directory "/usr/local/var/postgres"?
+2019-04-17 20:32:01.524 AEST [26286] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 20:32:01.524 AEST [26286] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:32:01.525 AEST [26286] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 20:32:01.525 AEST [26286] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:32:01.525 AEST [26286] WARNING:  could not create listen socket for "localhost"
+2019-04-17 20:32:01.525 AEST [26286] FATAL:  could not create any TCP/IP sockets
+2019-04-17 20:32:01.525 AEST [26286] LOG:  database system is shut down
+2019-04-17 20:32:21.606 AEST [26305] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 20:32:21.606 AEST [26305] HINT:  Is another postmaster (PID 26295) running in data directory "/usr/local/var/postgres"?
+2019-04-17 20:32:30.457 AEST [26310] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 20:32:30.457 AEST [26310] HINT:  Is another postmaster (PID 26295) running in data directory "/usr/local/var/postgres"?
+2019-04-17 20:35:19.180 AEST [27608] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 20:35:19.180 AEST [27608] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:35:19.180 AEST [27608] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 20:35:19.180 AEST [27608] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:35:19.180 AEST [27608] WARNING:  could not create listen socket for "localhost"
+2019-04-17 20:35:19.180 AEST [27608] FATAL:  could not create any TCP/IP sockets
+2019-04-17 20:35:19.181 AEST [27608] LOG:  database system is shut down
+2019-04-17 20:35:31.894 AEST [27616] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 20:35:31.894 AEST [27616] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:35:31.895 AEST [27616] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 20:35:31.895 AEST [27616] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 20:35:31.895 AEST [27616] WARNING:  could not create listen socket for "localhost"
+2019-04-17 20:35:31.895 AEST [27616] FATAL:  could not create any TCP/IP sockets
+2019-04-17 20:35:31.895 AEST [27616] LOG:  database system is shut down
+2019-04-17 20:37:05.409 AEST [27825] FATAL:  lock file "postmaster.pid" already exists
+2019-04-17 20:37:05.409 AEST [27825] HINT:  Is another postmaster (PID 27699) running in data directory "/usr/local/var/postgres"?
+2019-04-17 21:02:23.874 AEST [31136] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 21:02:23.874 AEST [31136] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:02:23.874 AEST [31136] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 21:02:23.874 AEST [31136] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:02:23.874 AEST [31136] WARNING:  could not create listen socket for "localhost"
+2019-04-17 21:02:23.874 AEST [31136] FATAL:  could not create any TCP/IP sockets
+2019-04-17 21:02:23.875 AEST [31136] LOG:  database system is shut down
+2019-04-17 21:02:26.714 AEST [31139] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 21:02:26.714 AEST [31139] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:02:26.714 AEST [31139] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 21:02:26.714 AEST [31139] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:02:26.714 AEST [31139] WARNING:  could not create listen socket for "localhost"
+2019-04-17 21:02:26.714 AEST [31139] FATAL:  could not create any TCP/IP sockets
+2019-04-17 21:02:26.714 AEST [31139] LOG:  database system is shut down
+2019-04-17 21:02:35.806 AEST [31148] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 21:02:35.806 AEST [31148] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:02:35.806 AEST [31148] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 21:02:35.806 AEST [31148] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:02:35.806 AEST [31148] WARNING:  could not create listen socket for "localhost"
+2019-04-17 21:02:35.806 AEST [31148] FATAL:  could not create any TCP/IP sockets
+2019-04-17 21:02:35.806 AEST [31148] LOG:  database system is shut down
+2019-04-17 21:03:31.208 AEST [31233] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-17 21:03:31.208 AEST [31233] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:03:31.209 AEST [31233] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-17 21:03:31.209 AEST [31233] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-17 21:03:31.209 AEST [31233] WARNING:  could not create listen socket for "localhost"
+2019-04-17 21:03:31.209 AEST [31233] FATAL:  could not create any TCP/IP sockets
+2019-04-17 21:03:31.209 AEST [31233] LOG:  database system is shut down
+2019-04-17 21:06:20.624 AEST [31409] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-17 21:06:20.625 AEST [31409] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-17 21:06:20.628 AEST [31409] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-17 21:06:20.645 AEST [31410] LOG:  database system was shut down at 2019-04-17 21:06:17 AEST
+2019-04-17 21:06:20.653 AEST [31409] LOG:  database system is ready to accept connections
+2019-04-17 21:07:51.658 AEST [31477] ERROR:  relation "actor" does not exist at character 34
+2019-04-17 21:07:51.658 AEST [31477] STATEMENT:  select count(distinct name) from actor
+2019-04-17 21:56:15.854 AEST [34326] LOG:  could not receive data from client: Connection reset by peer
+2019-04-18 06:52:23.469 AEST [49748] LOG:  could not receive data from client: Connection reset by peer
+2019-04-18 11:45:23.254 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:23.915 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:23.915 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:24.599 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:24.600 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:25.280 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:25.280 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:25.957 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:25.957 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:26.633 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:26.633 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:27.308 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:27.308 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:27.975 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:27.975 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:28.650 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:28.650 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:29.313 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:29.313 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:29.976 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:29.976 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:30.642 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:30.642 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:31.314 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:31.314 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:31.983 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:31.983 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:32.648 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:32.648 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:33.319 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:33.319 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:33.738 AEST [31414] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-04-18 11:45:33.738 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:33.738 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:34.419 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:34.419 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:35.091 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:35.092 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:35.764 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:35.782 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:36.443 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:36.443 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:37.118 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:37.118 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:37.787 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:37.787 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:38.462 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:38.462 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:39.132 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:39.132 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:39.804 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:39.804 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:40.471 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:40.471 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:41.147 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:41.147 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:41.826 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:41.826 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:42.497 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:42.497 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:43.171 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:43.171 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:43.847 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:43.847 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:44.267 AEST [31414] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-04-18 11:45:44.267 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:44.267 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:44.936 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:44.936 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:45.614 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:45.614 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:46.284 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:46.285 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:46.951 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:46.951 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:47.629 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:47.629 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:48.292 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:48.292 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:48.957 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:48.958 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:49.620 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:49.620 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:50.288 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:50.288 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:50.960 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:50.960 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:51.627 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:51.628 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:52.291 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:52.291 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:52.961 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:52.961 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:53.629 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:53.629 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:54.305 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:54.305 AEST [31415] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2019-04-18 11:45:54.724 AEST [31414] LOG:  using stale statistics instead of current ones because stats collector is not responding
+2019-04-18 11:45:57.947 AEST [31409] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-18 11:45:57.948 AEST [31409] LOG:  performing immediate shutdown because data directory lock file is invalid
+2019-04-18 11:45:57.948 AEST [31409] LOG:  received immediate shutdown request
+2019-04-18 11:45:57.948 AEST [31409] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-18 11:45:57.948 AEST [31414] WARNING:  terminating connection because of crash of another server process
+2019-04-18 11:45:57.948 AEST [31414] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2019-04-18 11:45:57.948 AEST [31414] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2019-04-18 11:45:57.948 AEST [31415] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2019-04-18 11:45:57.962 AEST [31409] LOG:  database system is shut down
+2019-04-18 11:47:06.319 AEST [58659] FATAL:  lock file "postmaster.pid" already exists
+2019-04-18 11:47:06.319 AEST [58659] HINT:  Is another postmaster (PID 58649) running in data directory "/usr/local/var/postgres"?
+2019-04-18 11:48:03.071 AEST [58883] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-18 11:48:03.071 AEST [58883] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 11:48:03.071 AEST [58883] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-18 11:48:03.071 AEST [58883] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 11:48:03.071 AEST [58883] WARNING:  could not create listen socket for "localhost"
+2019-04-18 11:48:03.071 AEST [58883] FATAL:  could not create any TCP/IP sockets
+2019-04-18 11:48:03.072 AEST [58883] LOG:  database system is shut down
+2019-04-18 11:48:37.701 AEST [58928] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-18 11:48:37.701 AEST [58928] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-18 11:48:37.712 AEST [58928] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-18 11:48:37.729 AEST [58929] LOG:  database system was shut down at 2019-04-18 11:48:34 AEST
+2019-04-18 11:48:37.738 AEST [58928] LOG:  database system is ready to accept connections
+2019-04-18 11:51:37.921 AEST [58928] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-18 11:51:37.922 AEST [58928] LOG:  performing immediate shutdown because data directory lock file is invalid
+2019-04-18 11:51:37.922 AEST [58928] LOG:  received immediate shutdown request
+2019-04-18 11:51:37.922 AEST [58928] LOG:  could not open file "postmaster.pid": No such file or directory
+2019-04-18 11:51:37.923 AEST [59048] WARNING:  terminating connection because of crash of another server process
+2019-04-18 11:51:37.923 AEST [59048] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2019-04-18 11:51:37.923 AEST [59048] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2019-04-18 11:51:37.923 AEST [58933] WARNING:  terminating connection because of crash of another server process
+2019-04-18 11:51:37.923 AEST [58933] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2019-04-18 11:51:37.923 AEST [58933] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2019-04-18 11:51:37.928 AEST [58928] LOG:  database system is shut down
+2019-04-18 11:52:13.888 AEST [59089] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-18 11:52:13.888 AEST [59089] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 11:52:13.889 AEST [59089] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-18 11:52:13.889 AEST [59089] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 11:52:13.889 AEST [59089] WARNING:  could not create listen socket for "localhost"
+2019-04-18 11:52:13.889 AEST [59089] FATAL:  could not create any TCP/IP sockets
+2019-04-18 11:52:13.889 AEST [59089] LOG:  database system is shut down
+2019-04-18 11:52:37.651 AEST [59112] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-18 11:52:37.651 AEST [59112] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 11:52:37.652 AEST [59112] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-18 11:52:37.652 AEST [59112] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 11:52:37.652 AEST [59112] WARNING:  could not create listen socket for "localhost"
+2019-04-18 11:52:37.652 AEST [59112] FATAL:  could not create any TCP/IP sockets
+2019-04-18 11:52:37.652 AEST [59112] LOG:  database system is shut down
+2019-04-18 11:56:17.888 AEST [59680] FATAL:  lock file "postmaster.pid" already exists
+2019-04-18 11:56:17.888 AEST [59680] HINT:  Is another postmaster (PID 59670) running in data directory "/usr/local/var/postgres"?
+2019-04-18 11:57:12.549 AEST [59733] FATAL:  lock file "postmaster.pid" already exists
+2019-04-18 11:57:12.549 AEST [59733] HINT:  Is another postmaster (PID 59721) running in data directory "/usr/local/var/postgres"?
+2019-04-18 11:57:18.698 AEST [59740] FATAL:  lock file "postmaster.pid" already exists
+2019-04-18 11:57:18.698 AEST [59740] HINT:  Is another postmaster (PID 59721) running in data directory "/usr/local/var/postgres"?
+2019-04-18 15:35:17.301 AEST [64636] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-18 15:35:17.301 AEST [64636] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 15:35:17.302 AEST [64636] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-18 15:35:17.302 AEST [64636] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 15:35:17.302 AEST [64636] WARNING:  could not create listen socket for "localhost"
+2019-04-18 15:35:17.302 AEST [64636] FATAL:  could not create any TCP/IP sockets
+2019-04-18 15:35:17.302 AEST [64636] LOG:  database system is shut down
+2019-04-18 15:35:42.040 AEST [64667] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-18 15:35:42.040 AEST [64667] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 15:35:42.041 AEST [64667] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-18 15:35:42.041 AEST [64667] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 15:35:42.041 AEST [64667] WARNING:  could not create listen socket for "localhost"
+2019-04-18 15:35:42.041 AEST [64667] FATAL:  could not create any TCP/IP sockets
+2019-04-18 15:35:42.041 AEST [64667] LOG:  database system is shut down
+2019-04-18 20:05:04.158 AEST [67682] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-18 20:05:04.158 AEST [67682] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 20:05:04.159 AEST [67682] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-18 20:05:04.159 AEST [67682] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-18 20:05:04.159 AEST [67682] WARNING:  could not create listen socket for "localhost"
+2019-04-18 20:05:04.159 AEST [67682] FATAL:  could not create any TCP/IP sockets
+2019-04-18 20:05:04.159 AEST [67682] LOG:  database system is shut down
+2019-04-18 20:05:37.289 AEST [67734] FATAL:  lock file "postmaster.pid" already exists
+2019-04-18 20:05:37.289 AEST [67734] HINT:  Is another postmaster (PID 67718) running in data directory "/usr/local/var/postgres"?
+2019-04-18 20:24:36.970 AEST [71886] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-18 20:24:36.971 AEST [71886] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-18 20:24:36.978 AEST [71886] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-18 20:24:36.994 AEST [71887] LOG:  database system was shut down at 2019-04-18 20:24:32 AEST
+2019-04-18 20:24:37.002 AEST [71886] LOG:  database system is ready to accept connections
+2019-04-18 20:25:43.844 AEST [71956] ERROR:  relation "actor" does not exist at character 34
+2019-04-18 20:25:43.844 AEST [71956] STATEMENT:  select count(distinct name) from actor
+2019-04-18 20:25:53.028 AEST [71963] ERROR:  relation "movie" does not exist at character 8
+2019-04-18 20:25:53.028 AEST [71963] STATEMENT:  UPDATE movie SET title = TRIM (title);
+2019-04-18 20:26:32.582 AEST [71987] ERROR:  syntax error at or near "%" at character 191
+2019-04-18 20:26:32.582 AEST [71987] STATEMENT:  create or replace view actor1 as
+	select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	where upper(actor.name) = upper(%s)
+	order by actor.name;
+2019-04-18 20:26:32.592 AEST [71987] ERROR:  syntax error at or near "%" at character 191
+2019-04-18 20:26:32.592 AEST [71987] STATEMENT:  create or replace view actor2 as
+	select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	where upper(actor.name) = upper(%s)
+	order by actor.name;
+2019-04-18 20:27:55.861 AEST [72030] ERROR:  syntax error at or near "%" at character 158
+2019-04-18 20:27:55.861 AEST [72030] STATEMENT:  select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	where upper(actor.name) = upper(%s)
+	
+	select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	where upper(actor.name) = upper('Tom Cruise')
+	order by actor.name
+	;
+2019-04-18 20:28:02.917 AEST [72030] ERROR:  syntax error at or near "%" at character 158
+2019-04-18 20:28:02.917 AEST [72030] STATEMENT:  select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	where upper(actor.name) = upper(%s)
+	
+	select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	where upper(actor.name) = upper('Tom Cruise')
+	order by actor.name
+	;
+2019-04-18 20:56:46.709 AEST [72730] LOG:  could not receive data from client: Connection reset by peer
+2019-04-18 21:07:22.950 AEST [73419] LOG:  could not receive data from client: Connection reset by peer
+2019-04-18 21:16:53.373 AEST [73794] ERROR:  table name "actor" specified more than once
+2019-04-18 21:16:53.373 AEST [73794] STATEMENT:  select movie.title, actor.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id
+	join actor on acting.actor_id = actor.id
+	where movie.id = 4371;
+2019-04-18 21:19:04.345 AEST [73794] ERROR:  missing FROM-clause entry for table "actor1" at character 33
+2019-04-18 21:19:04.345 AEST [73794] STATEMENT:  select movie.title, actor.name, actor1.name
+	from movie
+	join acting on movie.id = acting.movie_id
+	left join actor on acting.actor_id = actor.id
+	where movie.id = 4371;
+2019-04-18 21:22:35.787 AEST [73794] ERROR:  missing FROM-clause entry for table "actor" at character 21
+2019-04-18 21:22:35.787 AEST [73794] STATEMENT:  select movie.title, actor.name
+	from movie
+	join actor1 on actor1.title = movie.title;
+2019-04-18 21:23:01.562 AEST [73794] ERROR:  syntax error at or near ";" at character 132
+2019-04-18 21:23:01.562 AEST [73794] STATEMENT:  select movie.title, actor.name
+	from movie
+	join actor1 on actor1.title = movie.title
+	join actor on acting.actor_id = actor.id
+	where ;
+2019-04-18 21:23:06.914 AEST [73794] ERROR:  missing FROM-clause entry for table "acting" at character 99
+2019-04-18 21:23:06.914 AEST [73794] STATEMENT:  select movie.title, actor.name
+	from movie
+	join actor1 on actor1.title = movie.title
+	join actor on acting.actor_id = actor.id;
+2019-04-18 21:26:25.510 AEST [73794] ERROR:  syntax error at or near "join" at character 1
+2019-04-18 21:26:25.510 AEST [73794] STATEMENT:  join actor1 on actor1.title = movie.title
+	join acting on movie.id = acting.movie_id
+	join actor on acting.actor_id = actor.id;
+2019-04-18 22:09:53.147 AEST [71886] LOG:  received fast shutdown request
+2019-04-18 22:09:53.148 AEST [71886] LOG:  aborting any active transactions
+2019-04-18 22:09:53.151 AEST [71886] LOG:  background worker "logical replication launcher" (PID 71893) exited with exit code 1
+2019-04-18 22:09:53.151 AEST [71888] LOG:  shutting down
+2019-04-18 22:09:53.177 AEST [71886] LOG:  database system is shut down
+2019-04-19 06:30:55.154 AEST [94815] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-19 06:30:55.154 AEST [94815] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-19 06:30:55.154 AEST [94815] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-19 06:30:55.154 AEST [94815] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-19 06:30:55.154 AEST [94815] WARNING:  could not create listen socket for "localhost"
+2019-04-19 06:30:55.154 AEST [94815] FATAL:  could not create any TCP/IP sockets
+2019-04-19 06:30:55.155 AEST [94815] LOG:  database system is shut down
+2019-04-21 19:42:38.966 AEST [43563] LOG:  could not bind IPv6 address "::1": Address already in use
+2019-04-21 19:42:38.966 AEST [43563] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-21 19:42:38.966 AEST [43563] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-04-21 19:42:38.966 AEST [43563] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-04-21 19:42:38.967 AEST [43563] WARNING:  could not create listen socket for "localhost"
+2019-04-21 19:42:38.967 AEST [43563] FATAL:  could not create any TCP/IP sockets
+2019-04-21 19:42:38.967 AEST [43563] LOG:  database system is shut down
+2019-04-21 19:43:02.956 AEST [43591] FATAL:  lock file "postmaster.pid" already exists
+2019-04-21 19:43:02.956 AEST [43591] HINT:  Is another postmaster (PID 43590) running in data directory "/usr/local/var/postgres"?
+2019-04-21 19:43:24.318 AEST [43771] LOG:  listening on IPv6 address "::1", port 5432
+2019-04-21 19:43:24.318 AEST [43771] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-04-21 19:43:24.326 AEST [43771] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2019-04-21 19:43:24.351 AEST [43772] LOG:  database system was shut down at 2019-04-21 19:43:21 AEST
+2019-04-21 19:43:24.361 AEST [43771] LOG:  database system is ready to accept connections
+2019-04-21 19:43:43.461 AEST [43805] FATAL:  database "a2" does not exist
+2019-04-21 19:43:48.040 AEST [43807] ERROR:  database "a3" already exists
+2019-04-21 19:43:48.040 AEST [43807] STATEMENT:  CREATE DATABASE a3;
+2019-04-22 09:25:50.606 AEST [66828] ERROR:  cannot change name of view column "title" to "year"
+2019-04-22 09:25:50.606 AEST [66828] STATEMENT:  create or replace view genre_agg as
+	select movie.id, movie.year, movie.title, count(source.genre) as genre_count
+	from movie
+	join genre as source on source.movie_id = movie.id
+	join
+	(select movie.id, movie.title, source.genre
+	from movie
+	join genre as source on source.movie_id = movie.id
+	where upper(movie.title) = upper('The Shawshank Redemption')) as target
+	on target.genre = source.genre
+	where upper(movie.title) != upper('The Shawshank Redemption')
+	group by movie.id, movie.title
+	order by count(source.genre) desc
+	;
+2019-04-22 09:26:14.110 AEST [66828] ERROR:  syntax error at or near "dropview" at character 1
+2019-04-22 09:26:14.110 AEST [66828] STATEMENT:  dropview genre_agg
+	'
+	;
+	'
+	;
+2019-04-22 09:26:17.398 AEST [66828] ERROR:  syntax error at or near "dropview" at character 1
+2019-04-22 09:26:17.398 AEST [66828] STATEMENT:  dropview genre_agg;
+2019-04-22 14:53:57.370 AEST [43771] LOG:  received smart shutdown request
+2019-04-22 14:53:57.374 AEST [43771] LOG:  background worker "logical replication launcher" (PID 43778) exited with exit code 1
+2019-04-22 14:53:57.374 AEST [43773] LOG:  shutting down
+2019-04-22 14:53:57.513 AEST [43771] LOG:  database system is shut down

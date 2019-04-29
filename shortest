@@ -1,0 +1,44 @@
+#!/usr/bin/php
+<?php
+
+//
+// shortest 
+
+//Tasks E & F are inspired by Six degrees of Kevin Bacon. The shortest script takes in two actor names (with case insensitive matching), and lists the shortest path (up to Six Degrees of Separation) between two given actors. In other words, if two actors are not connected within six degrees, you can assume that they are not connected at all. The output will be a list of actors, the movies and the years. If there are more than one the same shortest paths, output all of them (all output lines are sorted alphabetically in ascending order). Reference(Wikipedia): Six Degrees of Kevin Bacon
+
+// include the common PHP code file
+require("a2.php");
+
+
+//BEGIN
+
+$usage = "Usage: $argv[0] N";
+$db = dbConnect(DB_CONNECTION);
+
+// Check arguments
+if (count($argv) < 2) exit("$usage\n");
+
+//create graph
+$graph = create_graph();
+//print_r($graph);
+
+//read in from cmd line. (Convert to proper case)
+$actor1 = ucwords(strtolower($argv[1]));
+$actor2 = ucwords(strtolower($argv[2]));
+
+//get index of graph array for actor 1
+$key1 = array_search($actor1, $graph);
+$key2 = array_search($actor2, $graph);
+
+//echo "index 1 = $key1\n";
+//echo "index 2 = $key2\n";
+
+//bfs search
+bfs_path_v2($key1, $key2, $graph) ;
+//if(bfs_path($graph, $key1, $key2)!=-1) echo "success?\n"; 
+
+//dfs
+//print_all_paths($key1, $key2, $graph);
+
+
+?>
