@@ -1,6 +1,7 @@
 # PHP-SQL
 - Examining a database of actors using PHP, SQL and PLpgSQL
 - completing assigned tasks
+- creating seperate BFS/DFS functions in PHP which can be found in 'a2.php'
 
 # Database
 - database of actors, movies, genres, imdb votes, imdb rating, duration etc.
@@ -11,8 +12,8 @@
 2. List movie information by its title substring and rank by imdb votes (see 'title' file)
 3. Top ranked movies by genre specified (see 'toprank' file)
 4. Similar movies to one specified ranked by the number of matching keywords and genres (see 'similar' file)
-5. Six degrees of Kevin Bacon (please see https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon) (see 'shortest' file)
-6. Actors with N degrees of separation (same as question 5 but with a random actor, not Kevin Bacon) (see 'degrees' file)
+5. Six degrees of Kevin Bacon (please see https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon) (see 'shortest' and 'a2.php' file)
+6. Actors with N degrees of separation (same as question 5 but with a random actor, not Kevin Bacon) (see 'degrees' and 'a2.php' file)
 
 # What I learned
 - Using DFS (recursively) and BFS (with a queue) in PHP to a certain depth
