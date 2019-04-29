@@ -1,8 +1,9 @@
 # PHP-SQL
-- Examining a database of actors using PHP and SQL
+- Examining a database of actors using PHP, SQL and PLpgSQL
 - completing assigned tasks
 
 # Database
+- database of actors, movies, genres, imdb votes, imdb rating, duration etc.
 - please see schema file for spec
 
 # Tasks
