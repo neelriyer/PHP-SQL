@@ -3,10 +3,6 @@
 - completing assigned tasks
 - creating seperate BFS/DFS functions in PHP which can be found in 'a2.php'
 
-# Database
-- database of actors, movies, genres, imdb votes, imdb rating, duration etc.
-- please see schema file for spec
-
 # Tasks
 1. The list of movies acted by a given actor rank in ascending order (see 'acting' file)
 2. List movie information by its title substring and rank by imdb votes (see 'title' file)
